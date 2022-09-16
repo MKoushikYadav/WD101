@@ -68,7 +68,7 @@ const displayEntries = () =>{
         const acceptTermsCell = `<td>${entry.acceptedTermsAndconditions}</td>`
         const row = `<tr>${nameCell} ${emailCell} ${passwordCell} ${dobCell} ${acceptTermsCell}</tr>`;
     return row;}).join(`\n`);
-    const table = `<table ><tr><th>Name</th><th>Email</th><th>Password</th><th>dob</th><th>accepted terms</th></tr>${tableEntries} </table>`;
+    const table = `<table ><tr><th>Name</th><th>Email</th><th>Password</th><th>Dob</th><th>accepted terms?</th></tr>${tableEntries} </table>`;
     let details = document.getElementById('user-entries');
     details.innerHTML = table;
     }
